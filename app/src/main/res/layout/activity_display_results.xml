@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha=".9"
+    android:background="#206B40"
+    tools:context="com.example.android.asdquiz.DisplayResultsActivity"
+    android:id="@+id/linearlayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/intro_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@android:color/white"
+            android:text="Thanks for taking the quiz! Let's go over the answers."/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+            <ImageView
+                android:id="@+id/brainpic1"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/brain"/>
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@id/brainpic1"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:text="QUESTION 1"
+                android:textSize="20dp"/>
+            <TextView
+                android:id= "@+id/question1text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question1"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                android:text="Can vaccines cause autism?"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/q1correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correct answer: No"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/question1text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="One of the biggest misconceptions about autism is that it can be caused by vaccinations. This is based off a falsified study by Andrew Wakefield in 1998 but there is absolutely no evidence to support this claim!"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/q1correct"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+            <ImageView
+                android:id="@+id/brainpic2"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/brain"/>
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_toRightOf="@id/brainpic2"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="QUESTION 2" />
+            <TextView
+                android:id= "@+id/question2text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question2"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="What causes autism?"/>
+            <TextView
+                android:id="@+id/q2correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correct answer: The cause is unknown"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/question2text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="While the exact cause of autism is unknown, it is believed to be due to an interaction between genetics and the environment."
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/q2correct"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+            <ImageView
+                android:id="@+id/brainpic3"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/brain"/>
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_toRightOf="@id/brainpic3"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="QUESTION 3" />
+            <TextView
+                android:id="@+id/question3text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question3"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="46dp"
+                android:textSize="20dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                android:text="Are boys or girls more likely to have autism?"/>
+            <TextView
+                android:id="@+id/q3correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correct answer: Boys"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/question3text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boys are 4-5 times more likely to have autism than girls. A common theory for this among scientists is that autism is linked to the X chromosome, which boys only have one of and are therefore more likely to inherit recessive traits such as autism."
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/q3correct"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+            <ImageView
+                android:id="@+id/brainpic4"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/brain"/>
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_toRightOf="@id/brainpic4"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="QUESTION 4" />
+            <TextView
+                android:id="@+id/question4text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question4"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="At what rate is autism growing in the US?"/>
+            <TextView
+                android:id="@+id/q4correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correct answer: 14%"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/question4text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The number of people diagnosed with autism is increasing at a staggering number, but it is uncertain whether more people actually have autism, or whether more people are simply getting formal diagnoses of it."
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/q4correct"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+            <ImageView
+                android:id="@+id/brainpic5"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/brain"/>
+            <TextView
+                android:id="@+id/question5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_toRightOf="@id/brainpic5"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="QUESTION 5" />
+            <TextView
+                android:id="@+id/question5text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question5"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="20dp"
+                android:text="Which of the following has the highest prevalence?"/>
+            <TextView
+                android:id="@+id/q5correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correct answer: Autism"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/question5text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="There are more cases of Autism than Diabetes and AIDS combined."
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/q5correct"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+            <ImageView
+                android:id="@+id/brainpic6"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/brain"/>
+            <TextView
+                android:id="@+id/question6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_toRightOf="@id/brainpic6"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="QUESTION 6" />
+            <TextView
+                android:id="@+id/question6text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question6"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="20dp"
+                android:text="Is there a cure to autism?"/>
+            <TextView
+                android:id="@+id/q6correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correct answer: No"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/question6text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="There is currently no cure to autism. Nevertheless, behavioral and speech therapy have proven beneficial to some people with autism."
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/q6correct"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+            <ImageView
+                android:id="@+id/brainpic7"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/brain"/>
+            <TextView
+                android:id="@+id/question7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_toRightOf="@id/brainpic7"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="QUESTION 7" />
+            <TextView
+                android:id="@+id/question7text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question7"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="If one identical twin has autism, what are the odds that the other identical twin also has autism?"/>
+            <TextView
+                android:id="@+id/q7correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correct answer: 90%"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/question7text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This high likelihood is a good indicator of a genetic cause of autism."
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/q7correct"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+            <ImageView
+                android:id="@+id/brainpic8"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/brain"/>
+            <TextView
+                android:id="@+id/question8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_toRightOf="@id/brainpic8"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="QUESTION 8" />
+            <TextView
+                android:id="@+id/question8text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question8"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Can someone develop autism as an adult?"/>
+            <TextView
+                android:id="@+id/q8correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correct answer: No"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/question8text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Autism is something somebody is born with, but the symptoms typically appear between ages 3 and 4."
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/q8correct"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+            <ImageView
+                android:id="@+id/brainpic9"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/brain"/>
+            <TextView
+                android:id="@+id/question9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_toRightOf="@id/brainpic9"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="QUESTION 9" />
+            <TextView
+                android:id="@+id/question9text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question9"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="When is Autism Awareness Month?"/>
+            <TextView
+                android:id="@+id/q9correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correct answer: April"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/question9text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Autism Awareness Day is April 2nd!"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/q9correct"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+            <ImageView
+                android:id="@+id/brainpic10"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/brain"/>
+            <TextView
+                android:id="@+id/question10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_toRightOf="@id/brainpic10"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="QUESTION 10" />
+            <TextView
+                android:id="@+id/question10text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question10"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="What proportion of children are diagnosed with autism?"/>
+            <TextView
+                android:id="@+id/q10correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correct answer: 1 in 68"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/question10text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 in 42 boys and 1 in 189 girls are diagnosed with autism."
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/q10correct"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
